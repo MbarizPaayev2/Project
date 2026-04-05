@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hesab — minimal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <nav class="auth-nav">
+      <a href="login.html">Giriş</a>
+      <a href="register.html">Qeydiyyat</a>
+    </nav>
+
+    <header class="site-header">
+      <div class="site-header__logo">✈ Aviakassa</div>
+      <p class="site-header__tagline" id="welcome-line">Yüklənir…</p>
+    </header>
+
+    <main>
+      <section class="card auth-card">
+        <p id="user-info" class="auth-intro"></p>
+        <button type="button" class="btn" id="btn-logout">Çıxış</button>
+        <p class="auth-footer"><a href="login.html">Girişə qayıt</a></p>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <p>© Aviakassa — minimal paket</p>
+    </footer>
+  </div>
+  <script>
+    (function () {
+      var welcome = document.getElementById("welcome-line");
+      var info = document.getElementById("user-info");
+      fetch("/api/me", { credentials: "same-origin" })
+        .then(function (r) { return r.json(); })
+        .then(function (d) {
+          if (!d.logged_in || !d.user) {
+            welcome.textContent = "Daxil deyilsiniz";
+            info.innerHTML = '<a href="login.html">Giriş səhifəsi</a>';
+            return;
+          }
+          welcome.textContent = "Xoş gəldiniz";
+          info.textContent = (d.user.full_name || d.user.email) + " · " + d.user.email;
+        })
+        .catch(function () {
+          welcome.textContent = "Xəta";
+        });
+      document.getElementById("btn-logout").addEventListener("click", function () {
+        fetch("/api/logout", { method: "POST", credentials: "same-origin" }).then(function () {
+          window.location.href = "login.html";
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
