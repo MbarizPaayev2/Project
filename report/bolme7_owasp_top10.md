@@ -1,7 +1,7 @@
 # Bölmə 7 — OWASP Top 10 ilə Müqayisə
 
 **Fənn:** Web Təhlükəsizliyi  
-**Tələbə:** [Ad Soyad]  
+**Tələbə:** Mubariz Pashayev  
 **Kurs:** II kurs  
 **Tarix:** Aprel 2026
 

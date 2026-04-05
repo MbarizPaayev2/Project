@@ -9,9 +9,9 @@
 
 ## 1.1 Layihə Haqqında
 
-Bu report **Aviakassa** adlı veb layihəsinin giriş-qeydiyyat modulunu — yəni istifadəçilərin sistemə necə daxil olduğunu, parolların necə qorunduğunu və bu prosesdə hansı təhlükəsizlik mexanizmlərinin tətbiq edildiyini analiz edir.
+Bu report **Aviakassa** adlı veb layihəsinin web təhlükəsizlik tapşırığını — yəni istifadəçilərin sistemə necə daxil olduğunu, parolların necə qorunduğunu və bu prosesdə hansı təhlükəsizlik mexanizmlərinin tətbiq edildiyini analiz edir.
 
-Aviakassa, aviabilet satışı üçün nəzərdə tutulmuş, sadə amma real texnologiyalarla qurulmuş bir veb tətbiqidir. Bu layihənin **yalnız bir hissəsi** — istifadəçi girişi (login) və qeydiyyat (register) modulu — burada araşdırılır.
+Aviakassa, aviabilet satışı üçün nəzərdə tutulmuş, sadə amma real texnologiyalarla qurulmuş bir veb tətbiqidir. Bu layihənin **yalnız bir hissəsi** — web təhlükəsizlik modulu — burada araşdırılır.
 
 Layihə üç əsas hissədən ibarətdir:
 
@@ -100,7 +100,7 @@ Burada `RealDictCursor` parametri verilənlər bazasından gələn cərgələri 
 Layihə açıq və anlaşılan bir quruluşa malikdir:
 
 ```
-login-register-only/
+web-security-task/
 │
 ├── backend/
 │   └── app.py              ← Bütün API endpoint-ləri burada

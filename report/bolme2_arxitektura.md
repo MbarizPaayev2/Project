@@ -1,7 +1,7 @@
 # Bölmə 2 — Layihənin Arxitekturası
 
 **Fənn:** Web Təhlükəsizliyi  
-**Tələbə:** [Ad Soyad]  
+**Tələbə:** Mubariz Pashayev  
 **Kurs:** II kurs  
 **Tarix:** Aprel 2026
 
@@ -254,13 +254,13 @@ FRONTEND_DIR = PROJECT_ROOT / "frontend"
 - `.resolve()` — simvolik linkləri açır, tam mütləq yol verir
 - `.parent` — bir qovluq yuxarı çıxır
 
-Yəni əgər `app.py` buradadırsa: `D:\login-register-only\backend\app.py`
+Yəni əgər `app.py` buradadırsa: `D:\web-security-task\backend\app.py`
 
 O zaman:
 ```
-BACKEND_DIR  = D:\login-register-only\backend
-PROJECT_ROOT = D:\login-register-only
-FRONTEND_DIR = D:\login-register-only\frontend
+BACKEND_DIR  = D:\web-security-task\backend
+PROJECT_ROOT = D:\web-security-task
+FRONTEND_DIR = D:\web-security-task\frontend
 ```
 
 Bu hesablama statik olaraq yox, **dinamik** edilir. Layihə başqa diskə köçürülsə də, başqa istifadəçinin kompüterində işlədilsə də — düzgün yollar tapılır.

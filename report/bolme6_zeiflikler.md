@@ -1,7 +1,7 @@
 # Bölmə 6 — Aşkar Edilmiş Zəifliklər və Tövsiyələr
 
 **Fənn:** Web Təhlükəsizliyi  
-**Tələbə:** [Ad Soyad]  
+**Tələbə:** Mubariz Pashayev  
 **Kurs:** II kurs  
 **Tarix:** Aprel 2026
 
@@ -555,7 +555,7 @@ app.run(host="127.0.0.1", port=int(os.environ.get("PORT", "5000")), debug=True)
 
 ```
 Traceback (most recent call last):
-  File "D:\login-register-only\backend\app.py", line 108, in user_get_by_email
+  File "D:\web-security-task\backend\app.py", line 108, in user_get_by_email
     cur.execute("SELECT id, email, password_hash...")
 psycopg2.OperationalError: connection to server at "db.example.com" (5432) refused
 ```

@@ -1,7 +1,7 @@
 # Bölmə 4 — Backend Təhlükəsizlik Analizi
 
 **Fənn:** Web Təhlükəsizliyi  
-**Tələbə:** [Ad Soyad]  
+**Tələbə:** Mubariz Pashayev  
 **Kurs:** II kurs  
 **Tarix:** Aprel 2026
 
