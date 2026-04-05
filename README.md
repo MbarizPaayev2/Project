@@ -71,6 +71,6 @@ python backend/app.py
 
 Brauzer: `http://127.0.0.1:5000/login.html`
 
-## 👤 Müəllif
+## 👤 Tələbə
 
-**Mübariz Paşayev** — 2-ci kurs tələbəsi
+**Mubariz Pashayev**
