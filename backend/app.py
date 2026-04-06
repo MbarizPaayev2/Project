@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Minimal Flask: yalnız /api/register, /api/login, /api/logout, /api/me + statik frontend.
+Flask:  /api/register, /api/login, /api/logout, /api/me + statik frontend.
 İşə salma (layihə kökündən): python backend/app.py
 """
 
