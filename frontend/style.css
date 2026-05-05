@@ -321,8 +321,9 @@ body {
 }
 
 .auth-nav a {
-  color: var(--color-primary);
+  color: #ffffff;
   font-weight: 600;
+  text-decoration: none;
 }
 
 .auth-card {
