@@ -1,4 +1,4 @@
-# 🔐 Web Təhlükəsizlik — Kurs Tapşırığı
+# 🔐 Web Programlaşdırma — Kurs Tapşırığı
 
 **Aviakassa** veb tətbiqinin təhlükəsizlik auditi və hesabatı.
 
